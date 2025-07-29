@@ -3,7 +3,7 @@
 body{
     display:flex;
     justify-content: center;
-
+    text-align: center;
     background-color: #c4e2ff;
 }
 .mainContent{
@@ -21,6 +21,7 @@ body{
 
 #links img{
     width: 50px;
+    border-radius: 50%
 }
 
 #links {
@@ -29,13 +30,21 @@ body{
     gap:10px;
     width: 100%;
     max-width:fit-content;
+    border-radius: 50%;
+}
+#links a{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    width: 100%;
+    max-width:fit-content;
+    border-radius: 52%;
 }
 .listItems li a{
     text-decoration: none;
     color: #2a4c76;
     background-color: #c4e2ff;
     padding:10px;
-
     border-radius:10px;
     display: flex;
     justify-content: center;
@@ -53,10 +62,18 @@ ul li {
     
 }
 
+a{
+  transition: transform .2s;
+}
+
+a:hover {
+  transform: scale(1.1);
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
 
 
 #logo{
-    width: 200px; /* Sets the width to 50% of its parent container */
+    width: 200px; 
     height: auto;
 
 }
@@ -106,6 +123,12 @@ a{
     width:120px;
     height:auto;
     padding: 5px;
+}
+p{
+    margin-top:0px;
+    justify-content: center;
+    
+    
 }
 
 @media (max-width: 600px) {

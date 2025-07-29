@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+body{
+    display:flex;
+    justify-content: center;
+
+    background-color: #c4e2ff;
+}
+.mainContent{
+    background-color: rgba(255, 254, 187, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 5%;
+    color: #2a4c76;
+    font-family: 'Patrick Hand', sans-serif;
+}
+
+#links img{
+    width: 50px;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    width: 100%;
+    max-width:fit-content;
+}
+.listItems li a{
+    text-decoration: none;
+    color: #2a4c76;
+    background-color: #c4e2ff;
+    padding:10px;
+
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+
+}
+.listItems{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    
+}
+ul li {
+    padding:10px;
+    
+}
+
+
+
+#logo{
+    width: 200px; /* Sets the width to 50% of its parent container */
+    height: auto;
+
+}
+#formLinks a{
+    text-decoration: none;
+    padding: 50%;
+    border: 2px solid #c4e2ff;
+    border-radius: 10px;
+    color: #2a4c76;
+    display: block;
+    padding: 3%;
+    margin-top:3%;
+    background-color: #c4e2ff;
+
+}
+
+
+a{
+    display: block;
+    
+}
+
+.profilesR{
+    display:flex;
+    flex-direction: row;
+    border-width: 10px;
+    padding: 5px;
+}
+
+.profilesC{
+    display:flex;
+    flex-direction: column;
+    border: 2px solid #c4e2ff;
+    border-radius: 10px;
+    margin: 5px;
+    
+}
+.profilesC p{
+    display:flex;
+    justify-content: center;
+    margin-top: 8px;
+    text-align: center;
+}
+
+#profiles img {
+    display:flex;
+    width:120px;
+    height:auto;
+    padding: 5px;
+}
+
+@media (max-width: 600px) {
+    body{
+        background:none;
+        background-color: rgba(255, 254, 187, 1);
+    }
+    .mainContent{
+        box-shadow:none;
+        border-radius:0;
+    }
+}
+

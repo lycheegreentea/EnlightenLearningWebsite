@@ -72,6 +72,14 @@ a:hover {
   transform: scale(1.1);
 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
+
+button{
+  transition: transform .2s;
+}
+button:hover {
+  transform: scale(1.1);
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
 .profilesC:hover {
   transform: scale(1.1);
 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -96,10 +104,20 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     margin: 2%;
 }
 
+.LMS button{
+    display: inline-block;
+    padding: 8px;
+    border: 2px solid #c4e2ff;
+    border-radius: 10px;
+    color: #2a4c76;
+    background-color: #c4e2ff;
+    margin: 7px;
+
+}
+
 
 a{
     display: block;
-    
 }
 
 .profilesR{
@@ -150,19 +168,57 @@ hr.rounded {
     text-decoration: underline;
 }
 
+
+
+/* Navbar */
 .navbar-inverse {
-    background-color: #c4e2ff !important; 
+    background-color: #7296c2 ; 
+    border-color: transparent ;
     border-radius: 10px;
-    border-color: transparent !important;
+    padding:10px;
+    
+}
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-nav li a,
+.navbar-nav li a:hover{
+    color: #2a4c76 !important;
+    background-color: #c4e2ff !important;
+    border-radius: 10px ;
+    margin:1px;
+
+}
+nav .navbar-nav li a:hover{
+    border-radius: 10px;
+    color:#c4e2ff;
+}
+
+/*collapsible button */
+.navbar-toggle,
+.navbar-toggle:hover{
+    background-color: #2a4c76;
+    margin-left:5px;
+
+
 }
 
 
-
-.nav navbar-nav li a {
-    border-radius: 10px;
+/* Gallery */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  flex: 50%;
+  padding: 0 4px;
 }
 
-
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 50%;
+}
 
 
 @media (max-width: 600px) {
@@ -175,4 +231,25 @@ hr.rounded {
         border-radius:0;
     }
 }
+@media (min-width:768px) {
+    .navbar-inverse {
+        background-color: transparent !important;
+        border-radius: 0;
+        margin: 0;
+    }
 
+    .navbar-brand,
+    .navbar-brand:hover,
+    .navbar-nav li a,
+    .navbar-nav li a:hover {
+        color: #2a4c76 !important;
+        margin: 0px;
+        
+    }
+    .navbar-inverse .navbar-collapse {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center;
+}
+    
+}

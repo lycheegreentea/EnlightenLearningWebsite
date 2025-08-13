@@ -17,7 +17,7 @@ body{
     padding: 5%;
     color: #2a4c76;
     font-family: 'Patrick Hand', sans-serif;
-    max-width: 600px;
+    max-width: 700px;
 
 }
 
@@ -145,6 +145,24 @@ hr.rounded {
     max-width: 100%;
     width: 100%;
 }
+
+.underline-text {
+    text-decoration: underline;
+}
+
+.navbar-inverse {
+    background-color: #c4e2ff !important; 
+    border-radius: 10px;
+    border-color: transparent !important;
+}
+
+
+
+.nav navbar-nav li a {
+    border-radius: 10px;
+}
+
+
 
 
 @media (max-width: 600px) {
